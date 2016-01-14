@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  娟娟学习
+//
+//  Created by 李朝 on 16/1/11.
+//  Copyright © 2016年 ammar. All rights reserved.
+//
+
+#import "UIBarButtonItem+AMExtension.h"
+#import "UIView+AMExtension.h"
+#import "AMConstent.h"
+
+//#define MAS_SHORTHAND
+//#define MAS_SHORTHAND_GLOBALS
+//
+//#import "Masonry.h"
+
+
+#ifdef DEBUG // 调试阶段
+#define AMLog(...)  NSLog(__VA_ARGS__)
+
+#else // 发布阶段
+
+#define AMLog(...)
+
+#endif
+
+// 颜色
+#define AMRGBColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// KVC 字符串处理 可以用keyPath(对象 ,属性)
+#define keyPath(objc,keyPath) @(((void)objc.keyPath,#keyPath))
