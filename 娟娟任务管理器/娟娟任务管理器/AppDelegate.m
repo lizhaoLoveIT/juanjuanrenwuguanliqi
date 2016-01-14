@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "AMMainViewController.h"
-#import "AMNavController.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +22,7 @@
     self.window = window;
     
     AMMainViewController *mainVc = [[AMMainViewController alloc] init];
-    AMNavController *nav = [[AMNavController alloc] initWithRootViewController:mainVc];
-    self.window.rootViewController = nav;
+    self.window.rootViewController = mainVc;
     
     [self.window makeKeyAndVisible];
     return YES;

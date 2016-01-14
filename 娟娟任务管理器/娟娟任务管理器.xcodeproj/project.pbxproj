@@ -13,7 +13,6 @@
 		A0D63DD31C47D7FA00414685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D63DD11C47D7FA00414685 /* LaunchScreen.storyboard */; };
 		A0D63DDE1C47D7FA00414685 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DDD1C47D7FA00414685 /* _______Tests.m */; };
 		A0D63DE91C47D7FA00414685 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DE81C47D7FA00414685 /* _______UITests.m */; };
-		A0D63E151C47DCDA00414685 /* AMNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DFB1C47DCDA00414685 /* AMNavController.m */; };
 		A0D63E171C47DCDA00414685 /* AMMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63E021C47DCDA00414685 /* AMMyAccountViewController.m */; };
 		A0D63E181C47DCDA00414685 /* AMConstent.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63E071C47DCDA00414685 /* AMConstent.m */; };
 		A0D63E191C47DCDA00414685 /* UIBarButtonItem+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63E0A1C47DCDA00414685 /* UIBarButtonItem+AMExtension.m */; };
@@ -30,6 +29,10 @@
 		A0D63E3E1C47E23A00414685 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63E321C47E23A00414685 /* View+MASAdditions.m */; };
 		A0D63E3F1C47E23A00414685 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63E351C47E23A00414685 /* ViewController+MASAdditions.m */; };
 		A0D63E421C47E40600414685 /* AMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63E411C47E40600414685 /* AMMainViewController.m */; };
+		A0DAD6781C48102500A58004 /* AMPurpose.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAD6771C48102500A58004 /* AMPurpose.m */; };
+		A0DAD67F1C4813EC00A58004 /* AMTaskViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAD67D1C4813EC00A58004 /* AMTaskViewCell.m */; };
+		A0DAD6801C4813EC00A58004 /* AMTaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DAD67E1C4813EC00A58004 /* AMTaskViewCell.xib */; };
+		A0DAD6831C48170E00A58004 /* AMCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAD6821C48170E00A58004 /* AMCalendarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,6 @@
 		A0D63DE41C47D7FA00414685 /* 娟娟任务管理器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "娟娟任务管理器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D63DE81C47D7FA00414685 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
 		A0D63DEA1C47D7FA00414685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0D63DFA1C47DCDA00414685 /* AMNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNavController.h; sourceTree = "<group>"; };
-		A0D63DFB1C47DCDA00414685 /* AMNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNavController.m; sourceTree = "<group>"; };
 		A0D63E011C47DCDA00414685 /* AMMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMyAccountViewController.h; sourceTree = "<group>"; };
 		A0D63E021C47DCDA00414685 /* AMMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMyAccountViewController.m; sourceTree = "<group>"; };
 		A0D63E061C47DCDA00414685 /* AMConstent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMConstent.h; sourceTree = "<group>"; };
@@ -103,6 +104,13 @@
 		A0D63E351C47E23A00414685 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		A0D63E401C47E40600414685 /* AMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMainViewController.h; sourceTree = "<group>"; };
 		A0D63E411C47E40600414685 /* AMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMainViewController.m; sourceTree = "<group>"; };
+		A0DAD6761C48102500A58004 /* AMPurpose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPurpose.h; sourceTree = "<group>"; };
+		A0DAD6771C48102500A58004 /* AMPurpose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPurpose.m; sourceTree = "<group>"; };
+		A0DAD67C1C4813EC00A58004 /* AMTaskViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTaskViewCell.h; sourceTree = "<group>"; };
+		A0DAD67D1C4813EC00A58004 /* AMTaskViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTaskViewCell.m; sourceTree = "<group>"; };
+		A0DAD67E1C4813EC00A58004 /* AMTaskViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMTaskViewCell.xib; sourceTree = "<group>"; };
+		A0DAD6811C48170E00A58004 /* AMCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCalendarView.h; sourceTree = "<group>"; };
+		A0DAD6821C48170E00A58004 /* AMCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCalendarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,8 +213,6 @@
 		A0D63DF71C47DCDA00414685 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A0D63DFA1C47DCDA00414685 /* AMNavController.h */,
-				A0D63DFB1C47DCDA00414685 /* AMNavController.m */,
 				A0D63E401C47E40600414685 /* AMMainViewController.h */,
 				A0D63E411C47E40600414685 /* AMMainViewController.m */,
 			);
@@ -290,6 +296,8 @@
 		A0D63E121C47DCDA00414685 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0DAD6761C48102500A58004 /* AMPurpose.h */,
+				A0DAD6771C48102500A58004 /* AMPurpose.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +305,11 @@
 		A0D63E131C47DCDA00414685 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0DAD67C1C4813EC00A58004 /* AMTaskViewCell.h */,
+				A0DAD67D1C4813EC00A58004 /* AMTaskViewCell.m */,
+				A0DAD67E1C4813EC00A58004 /* AMTaskViewCell.xib */,
+				A0DAD6811C48170E00A58004 /* AMCalendarView.h */,
+				A0DAD6821C48170E00A58004 /* AMCalendarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -441,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D63DD31C47D7FA00414685 /* LaunchScreen.storyboard in Resources */,
+				A0DAD6801C4813EC00A58004 /* AMTaskViewCell.xib in Resources */,
 				A0D63DD01C47D7FA00414685 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +483,8 @@
 				A0D63DC81C47D7FA00414685 /* AppDelegate.m in Sources */,
 				A0D63E1A1C47DCDA00414685 /* UIView+AMExtension.m in Sources */,
 				A0D63E3C1C47E23A00414685 /* NSArray+MASAdditions.m in Sources */,
+				A0DAD6831C48170E00A58004 /* AMCalendarView.m in Sources */,
+				A0DAD67F1C4813EC00A58004 /* AMTaskViewCell.m in Sources */,
 				A0D63E171C47DCDA00414685 /* AMMyAccountViewController.m in Sources */,
 				A0D63E181C47DCDA00414685 /* AMConstent.m in Sources */,
 				A0D63E3E1C47E23A00414685 /* View+MASAdditions.m in Sources */,
@@ -478,9 +494,9 @@
 				A0D63E361C47E23A00414685 /* MASCompositeConstraint.m in Sources */,
 				A0D63E191C47DCDA00414685 /* UIBarButtonItem+AMExtension.m in Sources */,
 				A0D63DC51C47D7FA00414685 /* main.m in Sources */,
-				A0D63E151C47DCDA00414685 /* AMNavController.m in Sources */,
 				A0D63E381C47E23A00414685 /* MASConstraintMaker.m in Sources */,
 				A0D63E3F1C47E23A00414685 /* ViewController+MASAdditions.m in Sources */,
+				A0DAD6781C48102500A58004 /* AMPurpose.m in Sources */,
 				A0D63E3B1C47E23A00414685 /* MASViewConstraint.m in Sources */,
 				A0D63E1B1C47DCDA00414685 /* AMTaskViewController.m in Sources */,
 				A0D63E3A1C47E23A00414685 /* MASViewAttribute.m in Sources */,

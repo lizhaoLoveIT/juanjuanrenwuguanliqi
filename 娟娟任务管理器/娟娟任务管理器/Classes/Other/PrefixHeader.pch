@@ -10,10 +10,10 @@
 #import "UIView+AMExtension.h"
 #import "AMConstent.h"
 
-//#define MAS_SHORTHAND
-//#define MAS_SHORTHAND_GLOBALS
-//
-//#import "Masonry.h"
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
 
 
 #ifdef DEBUG // 调试阶段

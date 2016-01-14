@@ -9,4 +9,6 @@
 #import <UIKit/UIKit.h>
 
 /** 抽屉效果抽屉占整个宽度的比例 */
-CGFloat const AMDrawerWidthScale = 0.2;
+CGFloat const AMTaskTableViewWidth = 109;
+/** taskView 中的 taskTableViewCell 的标识符 */
+NSString * const AMTaskTableViewCellID = @"AMTaskTableViewCell";

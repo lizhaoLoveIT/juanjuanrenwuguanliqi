@@ -8,12 +8,22 @@
 
 #import "AMTaskViewController.h"
 #import "AMMyAccountViewController.h"
-#import "AMNavController.h"
 
-@interface AMTaskViewController ()
+#import "AMCalendarView.h"
+#import "AMTaskViewCell.h"
 
-/** myAccountVc */
-@property (strong, nonatomic) AMMyAccountViewController *myAccountVc;
+#import "AMPurpose.h"
+
+@interface AMTaskViewController () <UITableViewDataSource, UITableViewDelegate>
+/** taskTableView */
+@property (weak, nonatomic) UITableView *taskTableView;
+/** topView */
+@property (weak, nonatomic) UIView *topView;
+/** calendarView */
+@property (weak, nonatomic) AMCalendarView *calendarView;
+
+/** 最终目标数组 */
+@property (strong, nonatomic) NSMutableArray *purposes;
 
 @end
 
@@ -22,11 +32,174 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor redColor];
+    // 初始化 topView
+    [self setupTopView];
     
+    // 初始化 taskTableView
+    [self setupTaskTableView];
     
+    // 初始化 calendarView
+    [self setupCalendarView];
+}
+#pragma mark - 初始化
+/**
+ * 初始化 topView
+ */
+- (void)setupTopView
+{
+    // 布局
+    [self layoutTopView];
+    self.topView.backgroundColor = [UIColor greenColor];
+}
+
+/**
+ * 初始化 taskTableView
+ */
+- (void)setupTaskTableView
+{
+    // 布局
+    [self layoutTaskTableView];
+    
+    // 取消分割线
+    self.taskTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.taskTableView.backgroundColor = [UIColor grayColor];
+}
+
+/**
+ * 初始化 calendarView
+ */
+- (void)setupCalendarView
+{
+    // 布局
+    [self layoutCalendarView];
+
+    self.calendarView.backgroundColor = [UIColor yellowColor];
+}
+
+#pragma mark - taskTableView DataSource and Delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.purposes.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AMTaskViewCell *cell = [AMTaskViewCell cellWithTableView:tableView];
+    
+    cell.purpose = self.purposes[indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
+
+#pragma mark - 懒加载
+
+/**
+ * taskTableView
+ */
+- (UITableView *)taskTableView
+{
+    if (_taskTableView == nil) {
+        
+        UITableView *taskTableView = [[UITableView alloc] init];
+        [self.view addSubview:taskTableView];
+        taskTableView.delegate = self;
+        taskTableView.dataSource = self;
+        _taskTableView = taskTableView;
+    }
+    return _taskTableView;
+}
+
+/**
+ * topView
+ */
+- (UIView *)topView
+{
+    if (_topView == nil) {
+        UIView *topView = [[UIView alloc] init];
+        [self.view addSubview:topView];
+        _topView = topView;
+    }
+    return _topView;
 }
 
 
+/**
+ * calendarView
+ */
+- (AMCalendarView *)calendarView
+{
+    if (_calendarView == nil) {
+        
+        AMCalendarView *calendarView = [[AMCalendarView alloc] init];
+        [self.view addSubview:calendarView];
+        _calendarView = calendarView;
+    }
+    return _calendarView;
+}
+
+
+/**
+ * purpose
+ */
+- (NSMutableArray *)purposes
+{
+    if (_purposes == nil) {
+        
+        _purposes = [NSMutableArray array];
+        for (NSInteger i = 0; i < 20; i++) {
+            AMPurpose *purpose = [AMPurpose purposeWithDict:@{@"test" : [NSString stringWithFormat:@"test---%zd", i]}];
+            [_purposes addObject:purpose];
+        }
+    }
+    return _purposes;
+}
+
+#pragma mark - 布局子控件
+/**
+ * layoutTopView
+ */
+- (void)layoutTopView
+{
+    [self.topView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.equalTo(self.view);
+        make.height.equalTo(64);
+    }];
+}
+
+/**
+ * layoutTaskTableView
+ */
+- (void)layoutTaskTableView
+{
+    [self.taskTableView makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.equalTo(self.view);
+        make.top.equalTo(self.topView.bottom);
+        make.width.equalTo(AMTaskTableViewWidth);
+    }];
+}
+
+/**
+ * layoutCalendarView
+ */
+- (void)layoutCalendarView
+{
+    [self.calendarView makeConstraints:^(MASConstraintMaker *make) {
+        make.right.bottom.equalTo(self.view);
+        make.top.equalTo(self.topView.bottom);
+        make.left.equalTo(self.taskTableView.right);
+    }];
+}
 
 @end

@@ -7,11 +7,10 @@
 //
 
 #import "AMMainViewController.h"
-#import "AMNavController.h"
 #import "AMTaskViewController.h"
 #import "AMMyAccountViewController.h"
 
-@interface AMMainViewController ()
+@interface AMMainViewController ()<UIGestureRecognizerDelegate>
 
 /** 正在显示的界面的控制器 */
 @property (weak, nonatomic) UIViewController *showingVc;
@@ -39,13 +38,11 @@
 - (void)addChildViewControllers
 {
     AMTaskViewController *taskVc = [[AMTaskViewController alloc] init];
-    AMNavController *taskNav = [[AMNavController alloc] initWithRootViewController:taskVc];
     self.showingVc = taskVc;
-    [self addChildViewController:taskNav];
+    [self addChildViewController:taskVc];
     
     AMMyAccountViewController *myAccountVc = [[AMMyAccountViewController alloc] init];
-    AMNavController *myAccountNav = [[AMNavController alloc] initWithRootViewController:myAccountVc];
-    [self addChildViewController:myAccountNav];
+    [self addChildViewController:myAccountVc];
     
 }
 
@@ -55,6 +52,8 @@
     [self.view addSubview:self.showingVc.view];
     self.showingVc.view.frame = self.view.bounds;
 }
+
+
 
 
 @end

@@ -8,5 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-/** 抽屉效果抽屉占整个宽度的比例 */
-UIKIT_EXTERN CGFloat const AMDrawerWidthScale;
+/** taskView 中的 taskTableView 的宽度 */
+UIKIT_EXTERN CGFloat const AMTaskTableViewWidth;
+/** taskView 中的 taskTableViewCell 的标识符 */
+UIKIT_EXTERN  NSString * const AMTaskTableViewCellID;
