@@ -7,8 +7,13 @@
 //
 
 #import "AMTaskViewController.h"
+#import "AMMyAccountViewController.h"
+#import "AMNavController.h"
 
 @interface AMTaskViewController ()
+
+/** myAccountVc */
+@property (strong, nonatomic) AMMyAccountViewController *myAccountVc;
 
 @end
 
@@ -18,15 +23,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor greenColor];
-    self.title = @"11";
     
     
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-//    AMLog(@"11");
-//}
+
 
 @end
