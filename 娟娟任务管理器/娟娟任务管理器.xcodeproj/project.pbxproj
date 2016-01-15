@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03942771C488D2200C9A4A5 /* AMTaskTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03942761C488D2200C9A4A5 /* AMTaskTopView.m */; };
+		A03942791C488D4600C9A4A5 /* AMTaskTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */; };
 		A0D63DC51C47D7FA00414685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DC41C47D7FA00414685 /* main.m */; };
 		A0D63DC81C47D7FA00414685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DC71C47D7FA00414685 /* AppDelegate.m */; };
 		A0D63DD01C47D7FA00414685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D63DCF1C47D7FA00414685 /* Assets.xcassets */; };
@@ -53,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A03942751C488D2200C9A4A5 /* AMTaskTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTaskTopView.h; sourceTree = "<group>"; };
+		A03942761C488D2200C9A4A5 /* AMTaskTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTaskTopView.m; sourceTree = "<group>"; };
+		A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMTaskTopView.xib; sourceTree = "<group>"; };
 		A0D63DC01C47D7FA00414685 /* 娟娟任务管理器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "娟娟任务管理器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D63DC41C47D7FA00414685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0D63DC61C47D7FA00414685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -305,6 +310,9 @@
 		A0D63E131C47DCDA00414685 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A03942751C488D2200C9A4A5 /* AMTaskTopView.h */,
+				A03942761C488D2200C9A4A5 /* AMTaskTopView.m */,
+				A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */,
 				A0DAD67C1C4813EC00A58004 /* AMTaskViewCell.h */,
 				A0DAD67D1C4813EC00A58004 /* AMTaskViewCell.m */,
 				A0DAD67E1C4813EC00A58004 /* AMTaskViewCell.xib */,
@@ -454,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D63DD31C47D7FA00414685 /* LaunchScreen.storyboard in Resources */,
+				A03942791C488D4600C9A4A5 /* AMTaskTopView.xib in Resources */,
 				A0DAD6801C4813EC00A58004 /* AMTaskViewCell.xib in Resources */,
 				A0D63DD01C47D7FA00414685 /* Assets.xcassets in Resources */,
 			);
@@ -493,6 +502,7 @@
 				A0D63E3D1C47E23A00414685 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				A0D63E361C47E23A00414685 /* MASCompositeConstraint.m in Sources */,
 				A0D63E191C47DCDA00414685 /* UIBarButtonItem+AMExtension.m in Sources */,
+				A03942771C488D2200C9A4A5 /* AMTaskTopView.m in Sources */,
 				A0D63DC51C47D7FA00414685 /* main.m in Sources */,
 				A0D63E381C47E23A00414685 /* MASConstraintMaker.m in Sources */,
 				A0D63E3F1C47E23A00414685 /* ViewController+MASAdditions.m in Sources */,

@@ -9,6 +9,7 @@
 #import "AMTaskViewController.h"
 #import "AMMyAccountViewController.h"
 
+#import "AMTaskTopView.h"
 #import "AMCalendarView.h"
 #import "AMTaskViewCell.h"
 
@@ -18,7 +19,7 @@
 /** taskTableView */
 @property (weak, nonatomic) UITableView *taskTableView;
 /** topView */
-@property (weak, nonatomic) UIView *topView;
+@property (weak, nonatomic) AMTaskTopView *topView;
 /** calendarView */
 @property (weak, nonatomic) AMCalendarView *calendarView;
 
@@ -124,10 +125,10 @@
 /**
  * topView
  */
-- (UIView *)topView
+- (AMTaskTopView *)topView
 {
     if (_topView == nil) {
-        UIView *topView = [[UIView alloc] init];
+        AMTaskTopView *topView = [AMTaskTopView viewFromXib];
         [self.view addSubview:topView];
         _topView = topView;
     }
