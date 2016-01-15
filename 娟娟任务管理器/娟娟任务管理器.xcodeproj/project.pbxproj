@@ -10,6 +10,8 @@
 		A03942771C488D2200C9A4A5 /* AMTaskTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03942761C488D2200C9A4A5 /* AMTaskTopView.m */; };
 		A03942791C488D4600C9A4A5 /* AMTaskTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */; };
 		A039427D1C48C32200C9A4A5 /* AMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039427B1C48C32200C9A4A5 /* AMNavigationController.m */; };
+		A03942821C48CE0800C9A4A5 /* AMDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03942811C48CE0800C9A4A5 /* AMDrawerViewController.m */; };
+		A03942C91C48DBAF00C9A4A5 /* AMTaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03942C81C48DBAF00C9A4A5 /* AMTaskView.m */; };
 		A0D63DC51C47D7FA00414685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DC41C47D7FA00414685 /* main.m */; };
 		A0D63DC81C47D7FA00414685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DC71C47D7FA00414685 /* AppDelegate.m */; };
 		A0D63DD01C47D7FA00414685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D63DCF1C47D7FA00414685 /* Assets.xcassets */; };
@@ -61,6 +63,10 @@
 		A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMTaskTopView.xib; sourceTree = "<group>"; };
 		A039427A1C48C32200C9A4A5 /* AMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNavigationController.h; sourceTree = "<group>"; };
 		A039427B1C48C32200C9A4A5 /* AMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNavigationController.m; sourceTree = "<group>"; };
+		A03942801C48CE0800C9A4A5 /* AMDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDrawerViewController.h; sourceTree = "<group>"; };
+		A03942811C48CE0800C9A4A5 /* AMDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDrawerViewController.m; sourceTree = "<group>"; };
+		A03942C71C48DBAF00C9A4A5 /* AMTaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTaskView.h; sourceTree = "<group>"; };
+		A03942C81C48DBAF00C9A4A5 /* AMTaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTaskView.m; sourceTree = "<group>"; };
 		A0D63DC01C47D7FA00414685 /* 娟娟任务管理器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "娟娟任务管理器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D63DC41C47D7FA00414685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0D63DC61C47D7FA00414685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +152,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A039427F1C48CE0800C9A4A5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A03942801C48CE0800C9A4A5 /* AMDrawerViewController.h */,
+				A03942811C48CE0800C9A4A5 /* AMDrawerViewController.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		A0D63DB71C47D7FA00414685 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +228,7 @@
 				A0D63E0E1C47DCDA00414685 /* Task */,
 				A0D63DFF1C47DCDA00414685 /* MyAccount */,
 				A0D63DF71C47DCDA00414685 /* Main */,
+				A039427F1C48CE0800C9A4A5 /* Modules */,
 				A0D63E051C47DCDA00414685 /* Other */,
 			);
 			path = Classes;
@@ -315,6 +331,8 @@
 		A0D63E131C47DCDA00414685 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A03942C71C48DBAF00C9A4A5 /* AMTaskView.h */,
+				A03942C81C48DBAF00C9A4A5 /* AMTaskView.m */,
 				A03942751C488D2200C9A4A5 /* AMTaskTopView.h */,
 				A03942761C488D2200C9A4A5 /* AMTaskTopView.m */,
 				A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */,
@@ -513,8 +531,10 @@
 				A0D63E381C47E23A00414685 /* MASConstraintMaker.m in Sources */,
 				A0D63E3F1C47E23A00414685 /* ViewController+MASAdditions.m in Sources */,
 				A0DAD6781C48102500A58004 /* AMPurpose.m in Sources */,
+				A03942C91C48DBAF00C9A4A5 /* AMTaskView.m in Sources */,
 				A0D63E3B1C47E23A00414685 /* MASViewConstraint.m in Sources */,
 				A0D63E1B1C47DCDA00414685 /* AMTaskViewController.m in Sources */,
+				A03942821C48CE0800C9A4A5 /* AMDrawerViewController.m in Sources */,
 				A0D63E3A1C47E23A00414685 /* MASViewAttribute.m in Sources */,
 				A0D63E421C47E40600414685 /* AMMainViewController.m in Sources */,
 			);

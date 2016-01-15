@@ -68,8 +68,6 @@
     
     // 取消分割线
     self.taskTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    self.taskTableView.backgroundColor = [UIColor grayColor];
 }
 
 /**
@@ -197,6 +195,8 @@
         make.top.left.right.equalTo(self.view);
         make.height.equalTo(64);
     }];
+    
+    
 }
 
 /**

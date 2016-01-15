@@ -6,8 +6,8 @@
 //  Copyright © 2016年 lizhao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AMDrawerViewController.h"
 
-@interface AMMainViewController : UIViewController
+@interface AMMainViewController : AMDrawerViewController
 
 @end
