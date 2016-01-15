@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A03942771C488D2200C9A4A5 /* AMTaskTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03942761C488D2200C9A4A5 /* AMTaskTopView.m */; };
 		A03942791C488D4600C9A4A5 /* AMTaskTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */; };
+		A039427D1C48C32200C9A4A5 /* AMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039427B1C48C32200C9A4A5 /* AMNavigationController.m */; };
 		A0D63DC51C47D7FA00414685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DC41C47D7FA00414685 /* main.m */; };
 		A0D63DC81C47D7FA00414685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D63DC71C47D7FA00414685 /* AppDelegate.m */; };
 		A0D63DD01C47D7FA00414685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D63DCF1C47D7FA00414685 /* Assets.xcassets */; };
@@ -58,6 +59,8 @@
 		A03942751C488D2200C9A4A5 /* AMTaskTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTaskTopView.h; sourceTree = "<group>"; };
 		A03942761C488D2200C9A4A5 /* AMTaskTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTaskTopView.m; sourceTree = "<group>"; };
 		A03942781C488D4600C9A4A5 /* AMTaskTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMTaskTopView.xib; sourceTree = "<group>"; };
+		A039427A1C48C32200C9A4A5 /* AMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNavigationController.h; sourceTree = "<group>"; };
+		A039427B1C48C32200C9A4A5 /* AMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNavigationController.m; sourceTree = "<group>"; };
 		A0D63DC01C47D7FA00414685 /* 娟娟任务管理器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "娟娟任务管理器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D63DC41C47D7FA00414685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0D63DC61C47D7FA00414685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 			children = (
 				A0D63E401C47E40600414685 /* AMMainViewController.h */,
 				A0D63E411C47E40600414685 /* AMMainViewController.m */,
+				A039427A1C48C32200C9A4A5 /* AMNavigationController.h */,
+				A039427B1C48C32200C9A4A5 /* AMNavigationController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				A0D63E361C47E23A00414685 /* MASCompositeConstraint.m in Sources */,
 				A0D63E191C47DCDA00414685 /* UIBarButtonItem+AMExtension.m in Sources */,
 				A03942771C488D2200C9A4A5 /* AMTaskTopView.m in Sources */,
+				A039427D1C48C32200C9A4A5 /* AMNavigationController.m in Sources */,
 				A0D63DC51C47D7FA00414685 /* main.m in Sources */,
 				A0D63E381C47E23A00414685 /* MASConstraintMaker.m in Sources */,
 				A0D63E3F1C47E23A00414685 /* ViewController+MASAdditions.m in Sources */,

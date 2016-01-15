@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AMTaskTopView;
+
+@protocol AMTaskTopViewDelegate <NSObject>
+
+- (void)topView:(AMTaskTopView *)topView DidClickHeadButton:(UIButton *)headButton;
+
+@end
 
 @interface AMTaskTopView : UIView
+
+/** 代理 */
+@property (weak, nonatomic) id<AMTaskTopViewDelegate> delegate;
 
 + (instancetype)viewFromXib;
 

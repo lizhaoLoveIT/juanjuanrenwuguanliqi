@@ -15,7 +15,7 @@
 
 #import "AMPurpose.h"
 
-@interface AMTaskViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface AMTaskViewController () <UITableViewDataSource, UITableViewDelegate, AMTaskTopViewDelegate>
 /** taskTableView */
 @property (weak, nonatomic) UITableView *taskTableView;
 /** topView */
@@ -43,7 +43,11 @@
     // 初始化 calendarView
     [self setupCalendarView];
 }
+
+
 #pragma mark - 初始化
+#pragma mark -
+
 /**
  * 初始化 topView
  */
@@ -51,7 +55,7 @@
 {
     // 布局
     [self layoutTopView];
-    self.topView.backgroundColor = [UIColor greenColor];
+    self.topView.delegate = self;
 }
 
 /**
@@ -79,7 +83,12 @@
     self.calendarView.backgroundColor = [UIColor yellowColor];
 }
 
+#pragma mark - delegate
+#pragma mark -
+
+
 #pragma mark - taskTableView DataSource and Delegate
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -104,7 +113,16 @@
     return 70;
 }
 
+#pragma mark - AMTaskTopViewDelegate
+- (void)topView:(AMTaskTopView *)topView DidClickHeadButton:(UIButton *)headButton
+{
+    
+}
+
+
 #pragma mark - 懒加载
+#pragma mark -
+
 
 /**
  * taskTableView
@@ -168,6 +186,8 @@
 }
 
 #pragma mark - 布局子控件
+#pragma mark -
+
 /**
  * layoutTopView
  */

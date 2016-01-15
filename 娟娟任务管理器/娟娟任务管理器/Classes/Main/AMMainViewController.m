@@ -22,6 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 隐藏导航栏
+    [self.navigationController.navigationBar setHidden:YES];
+    
     // 添加子控制器
     [self addChildViewControllers];
     
@@ -29,6 +32,8 @@
     [self showTaskView];
     
 }
+
+
 
 #pragma mark - 添加子控制器
 
