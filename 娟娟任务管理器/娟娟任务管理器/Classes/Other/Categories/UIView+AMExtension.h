@@ -27,4 +27,7 @@
 /** 从 xib 中加载控件 */
 + (instancetype)loadNibFromXib;
 
+/** Finds the view's viewController.*/
+- (UIViewController *)viewController;
+
 @end

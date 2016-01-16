@@ -20,6 +20,12 @@
     [super viewDidLoad];
     // 设置基本配置
     self.noLeftPan = YES;
+    self.noRightPan = NO; // 不能右划为 No
+    self.finalWidthScale = AMTaskViewFinalWidthScale; // 最终的宽度占屏幕的比例
+    self.finalY = AMTaskViewFinalY; // 最终的 Y 值
+    self.originalPanScale = AMTaskViewOriginalPanScale; // 允许开始拖拽的部分占总宽度的百分比
+    self.animationDefaultDuration =  AMAnimationDefaultTime; // 动画默认持续时间
+    self.finalScaleWithoutReset = AMTaskViewFinalScaleWithoutReset; // 将页面拖拽过多少松手后 不会复位
     
     // 隐藏导航栏
     [self.navigationController.navigationBar setHidden:YES];

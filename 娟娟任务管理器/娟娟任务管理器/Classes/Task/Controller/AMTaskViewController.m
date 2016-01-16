@@ -8,6 +8,7 @@
 
 #import "AMTaskViewController.h"
 #import "AMMyAccountViewController.h"
+#import "AMMainViewController.h"
 
 #import "AMTaskTopView.h"
 #import "AMCalendarView.h"
@@ -30,10 +31,9 @@
 
 @implementation AMTaskViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor redColor];
     // 初始化 topView
     [self setupTopView];
     
@@ -111,10 +111,19 @@
     return 70;
 }
 
-#pragma mark - AMTaskTopViewDelegate
+#pragma mark - AMTaskTopViewDelegate(点击了 左侧head按钮)
 - (void)topView:(AMTaskTopView *)topView DidClickHeadButton:(UIButton *)headButton
 {
-    
+    AMMainViewController *mainVc = (AMMainViewController *)self.parentViewController;
+    if (mainVc.mainView.viewX != 0) { // mainView 说明被划到右边去了
+        [UIView animateKeyframesWithDuration:AMAnimationDefaultTime delay:0.0 options:(UIViewKeyframeAnimationOptionLayoutSubviews) animations:^{
+            mainVc.mainView.frame = mainVc.view.bounds;
+        } completion:nil];
+    } else {
+        [UIView animateKeyframesWithDuration:AMAnimationDefaultTime delay:0.0 options:(UIViewKeyframeAnimationOptionLayoutSubviews) animations:^{
+            mainVc.mainView.frame = mainVc.finalFrame;
+        } completion:nil];
+    }
 }
 
 
